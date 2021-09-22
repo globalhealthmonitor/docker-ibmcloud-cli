@@ -3,7 +3,7 @@ name: Build
 on: [push]
 
 env:
-  REGISTRY_HOSTNAME: globalhealthmonitor
+  REGISTRY_HOSTNAME: ghmapp
   IMAGE_NAME: ibmcloud-cli
 
 jobs:
