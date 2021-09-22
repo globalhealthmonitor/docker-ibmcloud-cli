@@ -16,7 +16,7 @@ docker run -it \
   --name ibmcloud-cli \
   -e IBM_CLOUD_API_KEY=MY_API_KEY \
   -e IBM_CLOUD_REGION=MY_REGION \
-  globalhealthmonitor/ibmcloud-cli sh
+  ghmapp/ibmcloud-cli sh
 ```
 
 ## Plugins Installed default

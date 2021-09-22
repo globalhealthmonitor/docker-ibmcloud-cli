@@ -7,7 +7,7 @@ on:
     types: [created]
 
 env:
-  REGISTRY_HOSTNAME: globalhealthmonitor
+  REGISTRY_HOSTNAME: ghmapp
   IMAGE_NAME: ibmcloud-cli
 
 jobs:
@@ -33,7 +33,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: globalhealthmonitor/ibmcloud-cli:latest
+          tags: ghmapp/ibmcloud-cli:latest
 
       # - name: Push to GitHub Packages
       #   uses: docker/build-push-action@v2
@@ -41,5 +41,5 @@ jobs:
       #     username: ${{ github.actor }}
       #     password: ${{ secrets.GITHUB_TOKEN }}
       #     registry: docker.pkg.github.com
-      #     repository: globalhealthmonitor/docker-ibmcloud-cli:latest
+      #     repository: ghmapp/docker-ibmcloud-cli:latest
       #     push: true
